@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "991a89fb-6435-4972-bdc9-9aea52fddc5e",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/categories.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"categories.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Sub Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/sub_category.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"sub_category.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/products.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"products.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"category_name\": \"testaskjdfjasbdhfjasdfjas1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/categories.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"categories.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Sub Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"category_id\": \"5f3ad00a9a2bf8307a77867f\",\n    \"sub_category_name\": \"Vardhan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/sub_category.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"sub_category.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sub_category_id\": \"5f3bfc2eaae90f39e80fdf12\",\n    \"product_name\": \"Harsha Vardhan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/products.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"products.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"category_id\": \"5f3ad00c9a2bf8307a778682\",\n    \"category_name\": \"tesasdfasdfadsfadsfadsft4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/categories.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"categories.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Sub Category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sub_category_id\": \"5f3bfbd2418927015d33b7a4\",\n    \"sub_category_name\": \"harsha Vardhan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/sub_category.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"sub_category.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"product_id\": \"5f3ad4529a2bf8307a77868a\",\n    \"product_name\": \"teagdhabsdf\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/products.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"products.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"category_id\": \"5f3ad00a9a2bf8307a778680\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/categories.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"categories.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Sub Category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sub_category_id\": \"5f3bfc2eaae90f39e80fdf12\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/sub_category.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"sub_category.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"product_id\": \"5f3c03bb418927015d33b7a5\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/products.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"products.php"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
